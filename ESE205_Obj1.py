@@ -127,12 +127,8 @@ while (start_time + args.tim > cur_time):
             rps[index] = ((transitions - 1)/round((tim_stop - tim_start),2))*(1/4)
             if (rps[index] >= 10):      #doesn't work with wrapping
               rps[index] = rps[index - 1]
-           # elif ((rps[index] < 0.5) and (index > 500)):
-            #  rps[index] = rps[index - 1]
             elif ((rps[index] <= rps[index - 1]*0.5) and (index > 500)):
               rps[index] = rps[index - 1]
-           # elif ((rps[index] >= rps[index - 1]*2) and (index > 500)):
-            #  rps[index] = rps[index - 1]
         if (index <= 400):
             error[index] = 0
         else:
