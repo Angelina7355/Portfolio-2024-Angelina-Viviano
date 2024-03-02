@@ -113,7 +113,7 @@ cur_time = start_time
 while (start_time + args.tim > cur_time):
     cur_time = time.time()
     
-    # A/D reading stuff
+    # A/D reading information
     if (start_time + args.AD_delay * counter_AD < cur_time):
       reading[index] = car.adc.read_adc(0)
       times[index] = cur_time - start_time
@@ -122,7 +122,7 @@ while (start_time + args.tim > cur_time):
         avg[index] = round(movingAvg(diff, index),2)
       counter_AD += 1
     
-      # motor stuff
+      # motor information
       if (start_time + args.motor_delay * counter_RPS < cur_time):     
         transitions = 0
         start = 0
@@ -161,7 +161,8 @@ while (start_time + args.tim > cur_time):
         pos_thresh = threshold
         neg_thresh = (threshold)*-1
         i = 100
-      
+
+        # rps calculation based on how many wheel rotations the photoresistor detects
         while((transitions < 5) and (i > 0)):
           if (up):
             if(avg[index - i] > pos_thresh):
@@ -188,17 +189,13 @@ while (start_time + args.tim > cur_time):
             rps[index] = ((transitions - 1)/(tim_stop - tim_start))*(1/4)
             if (rps[index] >= 10):      #doesn't work with wrapping
               rps[index] = rps[index - 1]
-           # elif ((rps[index] < 0.5) and (index > 500)):
-            #  rps[index] = rps[index - 1]
             if (rps[index] <= rps[index - 1]*0.5) and (index > 0):
               rps[index] = rps[index - 1]
             if (rps[index] >= rps[index - 1]*1.3) and (index > 900):
               rps[index] = rps[index - 1]
             if ((rps[index] == 0) and (rps[index - 1] != 0) and (index > 0)):
               rps[index] = rps[index - 1]
-        #if (index <= 400):
-            #error[index] = 0
-        #else:
+
         error[index] = args.rps - rps[index]
         sumError += error[index]
         derivError = error[index]-error[index-1] 
@@ -232,7 +229,7 @@ while (start_time + args.tim > cur_time):
       index += 1  
       index = index % 2010
       
- # image and angle stuff
+ # get image and angle
     if (cur_time > start_time + (counter_img * args.delay)):
       image = car.get_image()
   #    image_array = np.array(image)
@@ -279,12 +276,6 @@ while (start_time + args.tim > cur_time):
         print(f'Dist: {distance}')
         if (distance is None):
           distance = 0
-#        elif (distance > 900):
- #         distance = 1
-  #        tim = distance/(args.rps * 21)
-   #       if (tim < 4):
-    #        print("STOPPED CAR (due to abnormally large reading)")
-     #       car.stop()
         else:
           tim = distance/(args.rps * 21)      # time = distance/speed  (rps*circumference = speed)
           if (args.rps < 7):
@@ -297,9 +288,6 @@ while (start_time + args.tim > cur_time):
               car.stop()
               break
       counter_img += 1
-    #if(cur_time >= start_time + 2 and once):
-      #car.set_motor(initialDC, forward = True)
-      #once = False
 
         
 GPIO.cleanup()
