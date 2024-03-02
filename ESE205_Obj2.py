@@ -8,7 +8,9 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 from picar import PiCar
 
-# define angle-measuring function
+# define angle-measuring function:
+# locates the center of mass of the dark blue color detected from the camera, and calculates its angle from the PiCar to
+# determine how much the wheels need to turn for the car to drive directly toward the blue object
 def getAngle(img, debug):
                 
    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -21,7 +23,6 @@ def getAngle(img, debug):
 
    M = cv2.moments(thresh)
    
-
 
    if (M['m00'] > 0):
       cX = int(M['m10']/M['m00'])
@@ -81,9 +82,10 @@ car.set_steer_servo(0)
 #car.set_steer_servo(2*(cur_DC-7.5))      this is redundant since wheels should always start centered
 sleep(args.delay)
 car.set_motor(100, forward = True)
+
 while (start_time + args.tim > cur_time):
    cur_time = time.time()
-   
+
    if (cur_time > start_time + (counter * args.delay)):
      image = car.get_image()
      image_array = np.array(image)
@@ -91,7 +93,6 @@ while (start_time + args.tim > cur_time):
         angle = getAngle(image, args.debug)
         print('Completed getAngle Method:')
         print(angle)
-       # cv2.imwrite('check.png', image)
      else:
         print('Did not Complete getAngle Method:')
         angle = 360
