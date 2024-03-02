@@ -7,7 +7,7 @@ A/D Converter, accelerometer, photoresistor, H-bridge, DC motors, servo motors, 
    - Pi Car uses camera attached swivel motor to to find dark blue object(recycling bin) and angle wheels to drive toward it
    - Pi Car drives toward recylcing bin at desired rps while turning wheels when necessary to reach recycling bin and stops as
   close to the recycling bin as possible without touching it
-      - Utilizes the "PiCar Class" Developed for the Course: pip3 install git+https://github.com/ESE205/PiCar
+      - Utilizes the "PiCar Class" Developed for the Course: https://github.com/ESE205/PiCar
 
 ## File Descriptions
 - ESE205_Obj1.py:           Data collection for speed (rps) calculation
