@@ -45,6 +45,7 @@ counter_AD = 0
 counter_RPS = 0
 wait_time = time.time()
 
+# calculate rps based on how many wheel rotations the photoresistor detects
 while(wait_time + args.wait > cur_time):
    cur_time = time.time()
    
