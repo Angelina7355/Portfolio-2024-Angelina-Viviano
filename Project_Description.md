@@ -1,4 +1,4 @@
-# --- Remote Control Car Code Utilizing the Raspberry Pi and Linux ---
+# Remote Control Car Code Utilizing the Raspberry Pi and Linux
 ## Project for ESE 205: Electrical and Systems Engineering-Introduction to Engineering Design
 
 - ESE205_Obj1.py:           Data collection for speed (rps) calculation
