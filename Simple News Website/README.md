@@ -2,8 +2,7 @@
 ## Project for CSE 503: Rapid Prototype Development & Creative Programming
 - A 1-week project completed in collaboration with one partner.
 - Goal:
-- Link to News Website Login Page: http://ec2-35-175-129-125.compute-1.amazonaws.com/~Angelina7355/module3-group-module3-511320-510715/login.html
-  - (AWS SERVER NOW TERMINATED)
+- Link to News Website Login Page: http://ec2-35-175-129-125.compute-1.amazonaws.com/~Angelina7355/module3-group-module3-511320-510715/login.html **(AWS SERVER NOW TERMINATED)**
   
   - Info for logging in:
     - Username: test_user
