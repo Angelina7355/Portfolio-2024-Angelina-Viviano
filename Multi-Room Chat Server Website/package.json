@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "mime": "^4.0.4",
-    "socket.io": "^4.8.1"
-  }
-}
