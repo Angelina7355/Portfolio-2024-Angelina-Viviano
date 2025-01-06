@@ -1,5 +1,5 @@
-# ANGELINA VIVIANO's PORTFOLIO
-## Extensive Project Highlighting Understanding in Python, Control Systems, Sensor INtegration, Data Processing, and Data-Visualization and Analysis
+# Angelina Viviano's Portfolio
+## Project Highlighting Understanding in Python, Control Systems, Sensor INtegration, Data Processing, and Data-Visualization and Analysis
 - PiCar Project
 ## Projects Highlighting Understanding in Website Design Principles
 - Anime Tracking Website
