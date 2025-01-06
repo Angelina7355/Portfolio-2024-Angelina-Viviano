@@ -1,11 +1,13 @@
 # Angelina Viviano's Portfolio
-
-## Project Highlighting Understanding in Python, Control Systems, Sensor Integration, Data Processing, Data-Visualization and Analysis
+## Featured Projects
 - PiCar Project
+    - Showcasing skills in Python programming, control systems, sensor integration, data processing, and data visualization/analysis.
 
-## Projects Highlighting Understanding in Website Design Principles
-- Anime Tracking Website
-- Performance Evaluation Report
-
-## Project Highlighting Understanding in Java and Java Libraries
 - Snake Game
+    - Illustrating understanding of Java programming and utilization of Java libraries.
+
+- Anime Tracking Website
+    - Demonstrating proficiency in website design principles and web development.
+
+- Performance Evaluation Report
+    - Highlighting expertise in performance analysis and evaluation techniques.
