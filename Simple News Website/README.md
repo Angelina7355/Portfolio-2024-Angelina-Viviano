@@ -4,6 +4,7 @@
 - Goal:
 - Link to News Website Login Page: http://ec2-35-175-129-125.compute-1.amazonaws.com/~Angelina7355/module3-group-module3-511320-510715/login.html
   - (AWS SERVER NOW TERMINATED)
+  
   - Info for logging in:
     - Username: test_user
     - Password: test_pass
