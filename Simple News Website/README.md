@@ -14,11 +14,11 @@
     - Clean, readable, and well-commented code following the FIEO (First In, Early Out) philosophy.
   - Usability:
     - Fully validated HTML/CSS for a visually appealing and user-friendly interface.
+  - Creative Portion:
+    - A followers system was created where users can follow other users. They can follow and unfollow users by clicking on the follow or unfollow buttons on other users' posts. They can then click the "Following Posts" button to go to a feed that only shows the posts of users they are following. They are unable to follow themselves (a follow button does not appear and they cannot see their posts on the "following posts" page).
     
 - Link to News Website Login Page: http://ec2-35-175-129-125.compute-1.amazonaws.com/~Angelina7355/module3-group-module3-511320-510715/login.html  **(AWS SERVER NOW TERMINATED)**
   
   - Info for logging in:
     - Username: test_user
     - Password: test_pass
-
-A followers system was created where users can follow other users. They can follow and unfollow users by clicking on the follow or unfollow buttons on other users' posts. They can then click the "Following Posts" button to go to a feed that only shows the posts of users they are following. They are unable to follow themselves (a follow button does not appear and they cannot see their posts on the "following posts" page).
