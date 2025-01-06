@@ -1,7 +1,20 @@
 # Simple News Wesbsire Code Utilizing MySQL Querying, PHP, & AWS Server
 ## Project for CSE 503: Rapid Prototype Development & Creative Programming
 - A 1-week project completed in collaboration with one partner.
-- Goal:
+- Goal: This project implements a secure and intuitive web application for managing user accounts, stories, and comments. Key features include:
+  - User Management:
+    - Secure user authentication with hashed and salted passwords.
+    - Session management for login and logout functionality.
+    - Permissions allowing users to edit and delete their own content while restricting access to others' content.
+  - Story and Comment Management:
+    - Relational database design with foreign keys and appropriate data types.
+    - CRUD functionality for stories and comments, with links stored in a separate database column.
+  - Security and Best Practices:
+    - Protection against SQL Injection and CSRF attacks.
+    - Clean, readable, and well-commented code following the FIEO (First In, Early Out) philosophy.
+  - Usability:
+    - Fully validated HTML/CSS for a visually appealing and user-friendly interface.
+    
 - Link to News Website Login Page: http://ec2-35-175-129-125.compute-1.amazonaws.com/~Angelina7355/module3-group-module3-511320-510715/login.html  **(AWS SERVER NOW TERMINATED)**
   
   - Info for logging in:
