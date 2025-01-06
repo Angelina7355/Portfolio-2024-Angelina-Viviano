@@ -1,5 +1,0 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RP1xU1WZ)
-# CSE330
-Angelina Viviano 510715 Angelina7355
-
-The phpinfo.php file cannot be loaded through Node.js because php is not specifcally a static language; it is a server-side scripting language. In static_server.js, we use Node.js to support only static files, meaning that it will only present static languages in the browser like text, html, and images. Php requires an external web server (like Apache) to pass it through a PHP interpreter to process its code and produce dynamic content in the browser. Since our current Node.js server lacks this PHP interpreter, it cannot execute phpinfo.php correctly, which is why it does not work when accessed through port 3456.

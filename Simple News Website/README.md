@@ -1,5 +1,5 @@
 # Simple News Website Code Utilizing MySQL Querying, PHP, & AWS Server
-## Project for CSE 503: Rapid Prototype Development & Creative Programming
+## Project for CSE 503S: Rapid Prototype Development & Creative Programming
 - A 1-week project completed in collaboration with one partner.
 - Goal: This project implements a secure and intuitive web application for managing user accounts, stories, and comments. Key features include:
   - User Management:

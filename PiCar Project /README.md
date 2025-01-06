@@ -1,4 +1,4 @@
-# Remote Control Car Code Utilizing the Raspberry Pi and Linux OS
+# Remote Control Car Code Utilizing Python, the Raspberry Pi, & Linux OS
 ## Project for ESE 205: Electrical and Systems Engineering-Introduction to Engineering Design
 - A semester-long project completed in collaboration with one partner.
 - Goal: Design a remote-control car using Linux OS, a Raspberry Pi, and its accessories including the Pi camera, ultrasonic sensor,
