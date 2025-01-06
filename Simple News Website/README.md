@@ -1,4 +1,4 @@
-# Simple News Wesbsire Code Utilizing MySQL Querying and PHP
+# Simple News Wesbsire Code Utilizing MySQL Querying, PHP, & AWS Server
 ## Project for CSE 503: Rapid Prototype Development & Creative Programming
 - A 1-week project completed in collaboration with one partner.
 - Goal:
